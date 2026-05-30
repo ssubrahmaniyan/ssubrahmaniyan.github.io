@@ -1,0 +1,16 @@
+[
+  {
+    "id": "hello-world",
+    "title": "Hello, world",
+    "summary": "My first post.",
+    "publishAt": "2026-05-31T01:00:00+05:30",
+    "file": "hello-world.md"
+  },
+  {
+    "id": "future-post-example",
+    "title": "Scheduled post example",
+    "summary": "This one won’t show until its publishAt time.",
+    "publishAt": "2026-06-07T09:00:00+05:30",
+    "file": "future-post-example.md"
+  }
+]

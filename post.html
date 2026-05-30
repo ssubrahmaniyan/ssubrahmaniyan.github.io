@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Post — Your Name</title>
+  <meta name="description" content="Blog post" />
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+  <header class="wrap">
+    <nav class="nav">
+      <a href="./index.html" class="brand">Your Name</a>
+      <div class="links">
+        <a href="./blog.html">Blog</a>
+        <a href="./index.html#about">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <a href="./blog.html">← Back</a>
+    <article class="card">
+      <h1 id="title">Loading…</h1>
+      <p class="muted" id="meta"></p>
+      <div id="content" class="prose"></div>
+      <div id="not-published" class="note" hidden>
+        This post isn’t published yet.
+      </div>
+    </article>
+  </main>
+
+  <footer class="wrap footer">
+    <small class="muted">© <span id="year"></span> Your Name</small>
+  </footer>
+
+  <!-- Markdown renderer (small, via CDN). If you prefer zero external deps, tell me and I’ll swap in a tiny built-in parser. -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="./assets/site.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    renderPostFromQuery();
+  </script>
+</body>
+</html>
