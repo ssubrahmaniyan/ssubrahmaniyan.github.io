@@ -7,10 +7,10 @@
     "file": "hello-world.md"
   },
   {
-    "id": "future-post-example",
-    "title": "Scheduled post example",
+    "id": "intern-1",
+    "title": "Intern blog 1",
     "summary": "This one won’t show until its publishAt time.",
-    "publishAt": "2026-06-07T09:00:00+05:30",
-    "file": "future-post-example.md"
+    "publishAt": "2027-06-07T09:00:00+05:30",
+    "file": "intern-1.md"
   }
 ]
